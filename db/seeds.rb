@@ -9,3 +9,7 @@
 30.times do
   Genre.create(name: Faker::Music.unique.genre, description: Faker::Hipster.paragraph(sentence_count: 2))
 end
+
+3.times do
+  Song.create(name: Faker::Hipster.words(number: 4), artist: Faker::Hipster.words(number: 2).join, album: Faker::Music.uniqe.album, song_url: Faker::Internet.url, submitted_by: Faker::Name.unique.name, genre_id: Genre.all.sample.id)
+end
