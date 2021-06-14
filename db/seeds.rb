@@ -5,11 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "faker"
 
 30.times do
-  Genre.create(name: Faker::Music.unique.genre, description: Faker::Hipster.paragraph(sentence_count: 2))
+  Genre.create(name: Faker::Music.genre, description: Faker::Hipster.paragraph(sentence_count: 2))
 end
 
 3.times do
-  Song.create(name: Faker::Hipster.words(number: 4), artist: Faker::Hipster.words(number: 2).join, album: Faker::Music.uniqe.album, song_url: Faker::Internet.url, submitted_by: Faker::Name.unique.name, genre_id: Genre.all.sample.id)
+  Song.create(name: Faker::Hipster.words(number: 4).join(" "), artist: Faker::Hipster.words(number: 2).join, album: Faker::Music.unique.album, song_url: Faker::Internet.url, submitted_by: Faker::Name.unique.name, genre_id: Genre.all.sample.id)
 end
