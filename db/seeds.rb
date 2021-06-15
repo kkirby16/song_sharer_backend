@@ -7,6 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require "faker"
 
+Genre.destroy_all
+Song.destroy_all
+
 30.times do
   Genre.create(name: Faker::Music.genre, description: Faker::Hipster.paragraph(sentence_count: 2))
 end
