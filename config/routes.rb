@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do #gives us version control for multiple apis we might want to have
-      resources :songs, only: [:index] #since building vertically only going to focus on index for now.
+      resources :songs, only: [:index, :create, :show] #since building vertically only going to focus on index for now.
     end
   end
 end
