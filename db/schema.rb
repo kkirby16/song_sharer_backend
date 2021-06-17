@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2021_06_15_034832) do
     t.string "submitted_by"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "genre_id"
+    t.bigint "genre_id", null: false
     t.index ["genre_id"], name: "index_songs_on_genre_id"
   end
 
