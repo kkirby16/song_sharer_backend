@@ -8,10 +8,12 @@
 require "faker"
 
 Genre.destroy_all
-Song.destroy_all
+Song.destroy_all  #have these destroy alls so that if we reseed our ids won't get wonky.
 
-30.times do
-  Genre.create(name: Faker::Music.genre, description: Faker::Hipster.paragraph(sentence_count: 2))
+genre_names = ["Folk", "Rock", "Jazz", "House", "Pop", "Indie Rock", "Rap", "Future Bass", "Instrumental", "Alternative", "Trap", "Funk", "Dance", "Hip Hop", "Bluegrass", "Country", "Reggae", "Blues", "Classical", "Punk Rock"]
+
+genre_names.each do |genre|
+  Genre.create(name: genre, description: Faker::Hipster.paragraph(sentence_count: 2))
 end
 
 3.times do
