@@ -1,6 +1,7 @@
 class Api::V1::SongsController < ApplicationController
   def index
-    songs = Song.all
+    songs = Song.order(created_at: :desc)
+    
     render json: SongSerializer.new(songs)
     #instead of rendering erb file, we are going to render our json here
   end
@@ -27,6 +28,6 @@ class Api::V1::SongsController < ApplicationController
   end
 end
 
-#we want to be explicit about how our controller is declared here at the top to reflect our namespaced routes.
+#**we want to be explicit about how our controller is declared here at the top to reflect our namespaced routes.
 
 #fast_jsonapi gem gives us access to a new generator called serializer.
