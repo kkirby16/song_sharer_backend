@@ -1,6 +1,6 @@
 class SongSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :name, :artist, :album, :song_url, :submitted_by, :genre_id, :genre
+  attributes :name, :artist, :album, :song_url, :submitted_by, :genre_id, :genre, :likes
 end
 
 #json serialier is good for scalability as it is nesting our attributes and data in a way that is very descriptive and makes it easier
