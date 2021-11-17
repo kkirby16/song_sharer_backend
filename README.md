@@ -26,6 +26,12 @@ Hence, I decided to make a song sharing website where you can see all songs that
 
 ## How to use the site:
 
+### Video of how to use my app: https://youtu.be/WlAL8AUhsrk
+
+#### or
+
+### Instructions below:
+
 -Fear not, the site is simple to use. Once you're on the site you can:
 
 -See songs that are listed on the right side of the screen, as well as seeing their song urls and the name of the person they have been submitted by. Just scroll in the box that contains the songs.
@@ -34,6 +40,6 @@ Hence, I decided to make a song sharing website where you can see all songs that
 
 -Click the button to see genres to see the genre categories our site has and their descriptions. You can scroll in this box to see all of the genres and their descriptions. To hide this box click the button in the same place that you clicked to see the genres. Clicking that button will now hide the genres box. To show the genres again click that button which has now changed to be a button to show the genres. You can click this button as much as you want to hide and show genres and their descriptions.
 
-Video of how to use my app: https://youtu.be/WlAL8AUhsrk
+Blog I wrote that's related to this project: https://dev.to/kkirby16/show-hide-div-in-js-w-2-clicks-how-2gc9
 
 This project is licensed under: https://www.gnu.org/licenses/gpl-3.0.en.html
