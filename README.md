@@ -28,9 +28,7 @@ Hence, I decided to make a song sharing website where you can see all songs that
 
 ### Video of how to use my app: https://youtu.be/WlAL8AUhsrk
 
-#### or
-
-### Instructions below:
+### Or, instructions below:
 
 -Fear not, the site is simple to use. Once you're on the site you can:
 
