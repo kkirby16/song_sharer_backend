@@ -1,7 +1,6 @@
 class Api::V1::SongsController < ApplicationController
   def index
     songs = Song.order(created_at: :desc)
-    
     render json: SongSerializer.new(songs)
     #instead of rendering erb file, we are going to render our json here
   end
