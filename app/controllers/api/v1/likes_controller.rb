@@ -1,6 +1,6 @@
 class Api::V1::LikesController < ApplicationController
   def create
-    @like = Like.create(song_id: params[:song_id])
+    @like = Like.create(song_id: params["like"]["song_id"].to_i)
   end
 
   def destroy
