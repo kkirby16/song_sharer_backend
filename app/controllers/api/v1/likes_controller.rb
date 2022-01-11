@@ -4,8 +4,8 @@ class Api::V1::LikesController < ApplicationController
   end
 
   def destroy
-    @like = Like.find(params[:id])
-    @like.destroy
+    @like = Like.find(params[:id].to_i)
+    @like.song.likes.last.destroy
   end
 
   private
