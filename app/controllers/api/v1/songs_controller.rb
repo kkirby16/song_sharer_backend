@@ -29,4 +29,3 @@ end
 
 #**we want to be explicit about how our controller is declared here at the top to reflect our namespaced routes.
 
-#fast_jsonapi gem gives us access to a new generator called serializer.
