@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "song-sharer.netlify.app" #this is where we list the respective origins we want to allow like our frontends website url on netlify
+    origins "https://song-sharer.netlify.app" #this is where we list the respective origins we want to allow like our frontends website url on netlify
 
     resource "*", #can specify which resources we want to allow requests to be made of
       headers: :any,
